@@ -1,0 +1,68 @@
+This is the unit test for assignment 2.
+
+To run the tests you need to do the following:
+
+1. Extract the contents of the zip archive to a folder. They should include:
+  * FibonacciTest.class
+  * unit-test-fibonacci.sh
+  * Array2Test.class
+  * unit-test-array2.sh
+  * LabSortingTest.class
+  * unit-test-labsorting.sh
+  * hamcrest-core-1.3.jar
+  * junit-4.12.jar
+  * This README file (funny bootstrap problem)
+
+2. Place your Array2.java, LabSorting.java, Fibonacci.java in the same folder.
+
+(WINDOWS)
+3.a Run the test using the powershell started in the same folder (without the `)
+  If you are running a windows machine, compile with (without the `)
+  `javac -cp . Fibonacci.java`
+  `javac -cp . Array2.java`
+  `javac -cp . LabSorting.java`
+  and execute with (without the ` but keep ')
+  `java -cp '.;hamcrest-core-1.3.jar;junit-4.12.jar' org.junit.runner.JUnitCore FibonacciTest`
+  `java -cp '.;hamcrest-core-1.3.jar;junit-4.12.jar' org.junit.runner.JUnitCore Array2Test`
+  `java -cp '.;hamcrest-core-1.3.jar;junit-4.12.jar' org.junit.runner.JUnitCore LabSortingTest`
+
+  Note: To open the power shell in windows, hold shift and right click in the folder and pick 'Open powershell window here'
+
+4.a If you need to rerun the test, update the source code files in the folder and simply redo the commands in step 3.a
+
+(MacOS & Unix)
+3.b Make the script executable by running
+  `chmod +x *.sh`
+  alternatively if you need privileges (unlikely)
+  `sudo chmod + *.sh`
+
+4.b Run the test using the script (Mac and Linux users) in the terminal started in the same folder (without the `)
+  `./unit-test-fibonacci.sh`
+  `./unit-test-array2.sh`
+  `./unit-test-labsorting.sh`
+
+  Note: To open a terminal in the folder, right click in the folder and pick 'Open in terminal'
+
+5.b If you need to rerun the test, simply update the source code files and run the commands in step 4.b
+  
+
+If you are having trouble executing the unit testing, consult the discussion forum on Canvas.
+
+(Troubleshooting)
+Make sure that you are running latest JDK and JRE to ensure compatibility.
+The unit test was compiled with openjdk-11
+
+
+Windows users: 
+Make sure that you can access the java binaries through the command prompt/powershell
+https://javatutorial.net/set-java-home-windows-10
+
+Installing jdk and jre specifically for windows
+https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-microsoft-windows-platforms.htm#JSJIG-GUID-2B9D2A17-176B-4BC8-AE2D-FD884161C958
+
+Installing jdk and jre specifically for MacOS
+https://docs.oracle.com/javase/10/install/installation-jdk-and-jre-macos.htm#JSJIG-GUID-2FE451B0-9572-4E38-A1A5-568B77B146DE
+
+
+For more information on how you can integrate unit testing in IDE using MAVEN or Gradle
+https://github.com/junit-team/junit4/wiki/Download-and-Install
